@@ -20,6 +20,10 @@ def main():
 def coursepage():
     return render_template('courseinfo.html')
 
+@app.route("/assignments")
+def assignmentspage():
+    return render_template('assignments.html')
+
 #start the server
 if __name__ == "__main__":
     app.run()

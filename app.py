@@ -16,6 +16,10 @@ app = Flask(__name__)
 def main():
     return render_template('index.html')
 
+@app.route("/courses")
+def coursepage():
+    return render_template('courseinfo.html')
+
 #start the server
 if __name__ == "__main__":
     app.run()
